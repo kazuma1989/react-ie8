@@ -23,6 +23,7 @@
     "webpack": "1.13.2"
   },
   "dependencies": {
+    "core-js": "^2.5.3",
     "nervjs": "^1.2.4"
   },
   "babel": {
