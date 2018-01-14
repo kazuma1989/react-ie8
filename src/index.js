@@ -8,5 +8,6 @@ require('core-js/es6/promise');
 
 const React = require('react');
 const ReactDOM = require('react-dom');
+const App = require('./App');
 
-ReactDOM.render(<h1>HELLO</h1>, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
