@@ -19,6 +19,9 @@ module.exports = class App extends React.Component {
       <div>
         <h1>Upper case changer</h1>
         <input type="text" value={this.state.name} onChange={this.handleInput} />
+        <div>
+          {JSON.stringify({ name: this.state.name })}
+        </div>
       </div>
     );
   }
