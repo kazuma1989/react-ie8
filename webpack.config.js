@@ -1,3 +1,5 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
   entry: __dirname + '/script.js',
   output: {
@@ -28,6 +30,12 @@ module.exports = {
       }
     ]
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      inject: true,
+      template: __dirname + '/public/index.html'
+    }),
+  ],
   resolve: {
     extensions: ['', '.js']
   }
