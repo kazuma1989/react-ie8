@@ -1,7 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: __dirname + '/script.js',
+  entry: __dirname + '/src/index.js',
   output: {
     path: __dirname + '/dist',
     filename: 'bundle.js'
@@ -37,6 +37,12 @@ module.exports = {
     }),
   ],
   resolve: {
+    alias: {
+      // Switching to Nerv from React without any code changes
+      // https://github.com/NervJS/nerv#switching-to-nerv-from-react
+      'react': 'nervjs',
+      'react-dom': 'nervjs',
+    },
     extensions: ['', '.js']
   }
 };
