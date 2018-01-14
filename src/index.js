@@ -6,12 +6,6 @@ require('core-js/es6/array');
 require('core-js/es6/string');
 require('core-js/es6/promise');
 
-(() => {
-  const text = JSON.stringify([1, 2, 3].map(x => x * 10)).repeat(2);
-  console.log(text);
-})();
-
-// -----
 const React = require('react');
 const ReactDOM = require('react-dom');
 
